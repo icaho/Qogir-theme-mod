@@ -49,8 +49,8 @@
   background-color: rgba($osd_bg_color, 0.9);
 
   & .folder-name-container {
-    padding: 12px 18px 0;
-    spacing: 12px;
+    padding: 6px 10px 0;
+    spacing: 6px;
 
     & .folder-name-label,
     & .folder-name-entry {
@@ -81,8 +81,8 @@
   }
 
   & .icon-grid {
-    row-spacing: $cont_padding * 2;
-    column-spacing: $cont_padding * 3;
+    row-spacing: $cont_padding;
+    column-spacing: $cont_padding;
     page-padding-top: 0;
     page-padding-bottom: 0;
     page-padding-left: 0;

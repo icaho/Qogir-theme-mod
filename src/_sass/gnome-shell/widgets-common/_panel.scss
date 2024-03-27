@@ -1,7 +1,7 @@
 /* Top Bar */
 
 #panel {
-  font-weight: normal;
+  font-weight: bold;
   height: 2.1em;
   min-height: 27px;
   background-color: $panel_bg;
@@ -45,7 +45,7 @@
   .panel-button {
     -natural-hpadding: 10px;
     -minimum-hpadding: 6px;
-    font-weight: normal;
+    font-weight: bold;
     color: $panel_fg;
     transition-duration: 150ms;
     text-shadow: none;

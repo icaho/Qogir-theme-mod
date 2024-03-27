@@ -5644,7 +5644,6 @@ leaflet.unfolded > box:last-child > headerbar {
 
 .nautilus-window:not(.view) headerbar,
 .nautilus-window .sidebar-pane headerbar {
-  background-image: -gtk-scaled(url("assets/logo.svg"), url("assets/logo@2.svg")), image(#32343D);
   background-repeat: no-repeat;
   background-size: 38px auto;
   background-position: left center;
