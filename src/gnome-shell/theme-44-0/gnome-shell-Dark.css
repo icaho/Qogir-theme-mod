@@ -2080,7 +2080,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .search-entry {
   width: 320px;
   padding: 7px 9px;
-  border-radius: 8px;
+  border-radius: 6px;
   color: rgba(230, 235, 239, 0.7);
   background-color: #40424e;
   border: none;
