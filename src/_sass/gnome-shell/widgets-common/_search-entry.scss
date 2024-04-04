@@ -7,7 +7,7 @@ $search_entry_height: 36px;
 .search-entry {
   width: $search_entry_width;
   padding: 7px 9px;
-  border-radius: 1000px; // half the height
+  border-radius: 8px; // half the height
   color: transparentize($fg_color, 0.3);
   background-color: lighten($bg_color, 6%);
   border: none;

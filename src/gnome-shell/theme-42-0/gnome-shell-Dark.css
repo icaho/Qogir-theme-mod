@@ -143,7 +143,6 @@ StEntry {
   selection-background-color: #5294e2;
   selected-color: #ffffff;
   transition-duration: 300ms;
-  border-radius: 2px;
   color: #e0e5eb;
   background-color: #282a33;
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -2056,7 +2055,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .search-entry {
   width: 320px;
   padding: 7px 9px;
-  border-radius: 1000px;
+  border-radius: 8px;
   color: rgba(230, 235, 239, 0.7);
   background-color: #40424e;
   border: none;
@@ -2844,8 +2843,8 @@ StWidget.focused .app-well-app-running-dot {
   background-color: #2c2f39;
   border: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: none;
-  padding: 4px 18px;
-  border-radius: 2px;
+  padding: 4px 16px;
+  border-radius: 6px;
 }
 
 .unlock-dialog .modal-dialog-button:hover, .unlock-dialog .modal-dialog-button:focus,
@@ -2888,9 +2887,9 @@ StWidget.focused .app-well-app-running-dot {
 .login-dialog .switch-user-button,
 .login-dialog .login-dialog-session-list-button {
   padding: 0;
-  width: 36px;
-  height: 36px;
-  border-radius: 100px;
+  width: 28px;
+  height: 28px;
+  border-radius: 1000px;
   background-color: rgba(211, 218, 227, 0.1);
   border-color: rgba(211, 218, 227, 0.1);
 }
@@ -3084,7 +3083,7 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .login-dialog StEntry {
-  border-radius: 1000px;
+  border-radius: 6px;
 }
 
 /* Screen Shield */
@@ -3163,7 +3162,7 @@ StWidget.focused .app-well-app-running-dot {
 
 .unlock-dialog StEntry {
   border: none !important;
-  border-radius: 1000px;
+  border-radius: 8px;
   background-color: rgba(211, 218, 227, 0.05);
   color: rgba(211, 218, 227, 0.7);
 }
@@ -3183,7 +3182,7 @@ StWidget.focused .app-well-app-running-dot {
 .unlock-dialog .login-dialog-session-list-button {
   border-color: transparent;
   background-color: rgba(230, 235, 239, 0.1);
-  border-radius: 1000px;
+  border-radius: 8px;
 }
 
 #lockDialogGroup {
