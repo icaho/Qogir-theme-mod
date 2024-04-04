@@ -10427,22 +10427,6 @@ window.background.csd > headerbar.titlebar > leaflet > headerbar:first-child but
   background-color: #e4edf3;
 }
 
-.nautilus-window headerbar {
-  background-image: -gtk-scaled(url("assets/logo.svg"), url("assets/logo@2.svg")), image(#32343D);
-  background-repeat: no-repeat;
-  background-size: 38px auto;
-}
-
-.nautilus-window headerbar:dir(ltr) {
-  background-position: left center;
-  padding-left: 44px;
-}
-
-.nautilus-window headerbar:dir(rtl) {
-  background-position: right center;
-  padding-right: 44px;
-}
-
 filechooser paned > separator {
   background-image: image(#e0e0e0);
 }

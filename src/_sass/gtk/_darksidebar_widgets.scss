@@ -215,23 +215,23 @@ $side_theme_alt_fg: $dark_sidebar_icon_fg;
   trough { background-color: darken($dark_sidebar_bg, 5%); }
 }
 
-%headerbar_image {
-  background-image: -gtk-scaled(url("assets/logo.svg"),url("assets/logo@2.svg")), image($dark_sidebar_icon_bg);
-  background-repeat: no-repeat;
-  background-size: 38px auto;
+// %headerbar_image {
+//   // background-image: -gtk-scaled(url("assets/logo.svg"),url("assets/logo@2.svg")), image($dark_sidebar_icon_bg);
+//   // background-repeat: no-repeat;
+//   // background-size: 38px auto;
 
-  $_padding: 44px;
+//   // $_padding: 44px;
 
-  &:dir(ltr) {
-    background-position: left center;
-    padding-left: $_padding;
-  }
+//   // &:dir(ltr) {
+//   //   background-position: left center;
+//   //   padding-left: $_padding;
+//   // }
 
-  &:dir(rtl) {
-    background-position: right center;
-    padding-right: $_padding;
-  }
-}
+//   // &:dir(rtl) {
+//   //   background-position: right center;
+//   //   padding-right: $_padding;
+//   // }
+// }
 
 // Reset filechooser separator
 filechooser {
@@ -257,7 +257,7 @@ filechooser {
   }
 
   headerbar {
-    @extend %headerbar_image; // Set nautilus headerbar mountain icon
+    @extend %headerbar_image !optional; // Set nautilus headerbar mountain icon
 
     &, &:backdrop {
       box-shadow: inset 0 -1px if($variant=='light', rgba($dark_sidebar_icon_bg, 0.15), $dark_sidebar_icon_bg),
