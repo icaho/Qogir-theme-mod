@@ -132,7 +132,7 @@
   .icon-button {
     background-color: transparent;
     color: $text_color !important;
-    padding: $cont_padding;
+    padding: $cont_padding * 0.5;
 
     &:hover {
       background-color: rgba($fg_color, 0.06);

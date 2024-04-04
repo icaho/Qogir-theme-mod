@@ -3627,7 +3627,7 @@ StWidget.focused .app-well-app-running-dot {
 .quick-slider .icon-button, .quick-slider .background-app-item .close-button, .background-app-item .quick-slider .close-button {
   background-color: transparent;
   color: #4a4c59 !important;
-  padding: 6px;
+  padding: 3px;
 }
 
 .quick-slider .icon-button:hover, .quick-slider .background-app-item .close-button:hover, .background-app-item .quick-slider .close-button:hover {
