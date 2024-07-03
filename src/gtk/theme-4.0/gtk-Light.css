@@ -5653,6 +5653,7 @@ leaflet.unfolded > headerbar.titlebar.tweak-titlebar-left, leaflet.unfolded > bo
 
 .nautilus-window:not(.view) headerbar,
 .nautilus-window .sidebar-pane headerbar {
+  background-image: image(#f6f9fb);
   background-repeat: no-repeat;
   background-size: 38px auto;
   background-position: left center;
@@ -5741,7 +5742,6 @@ leaflet.unfolded > headerbar.titlebar.tweak-titlebar-left, leaflet.unfolded > bo
 .nautilus-window:not(.view) headerbar,
 .nautilus-window .sidebar-pane headerbar {
   color: rgba(70, 72, 83, 0.75);
-  padding-left: 38px;
 }
 
 .nautilus-window:not(.view) headerbar, .nautilus-window:not(.view) headerbar:backdrop {
