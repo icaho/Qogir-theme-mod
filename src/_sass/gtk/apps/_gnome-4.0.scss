@@ -138,7 +138,7 @@ $side_theme_alt_fg: $dark_sidebar_icon_fg;
 }
 
 %headerbar_image {
-  background-image: image($dark_sidebar_bg);
+  background-image: image($dark_sidebar_icon_bg);
   background-repeat: no-repeat;
   background-size: 38px auto;
   background-position: left center;
@@ -236,7 +236,7 @@ $side_theme_alt_fg: $dark_sidebar_icon_fg;
 
   flap.unfolded,
   .sidebar-pane > toolbarview {
-    background-color: $dark_sidebar_bg;
+    background-color: $dark_sidebar_icon_bg;
     background-image: image($dark_sidebar_icon_bg);
     background-size: 38px auto;
     background-repeat: no-repeat;
@@ -249,7 +249,7 @@ $side_theme_alt_fg: $dark_sidebar_icon_fg;
 
     > placessidebar {
       background-color: transparent;
-      color: $dark_sidebar_fg;
+      color: $dark_sidebar_icon_fg;
       padding: 0;
 
       list {
@@ -260,7 +260,7 @@ $side_theme_alt_fg: $dark_sidebar_icon_fg;
       row.sidebar-row {
         margin: 0;
         transition: none;
-        color: $dark_sidebar_fg;
+        color: $dark_sidebar_icon_fg;
         border-radius: 0;
         padding: 2px 0;
         background-repeat: no-repeat;

@@ -119,12 +119,12 @@
 }
 
 .quick-slider {
-  & > StBoxLayout { spacing: $cont_padding; }
+  & > StBoxLayout { spacing: 0.5 * $cont_padding !important; }
 
   .slider-bin {
     &:focus { @include button(focus); }
     min-height: 16px; // slider size
-    padding: $cont_padding;
+    padding: 0.5 * $cont_padding !important;
     border-radius: 16px;
   }
 

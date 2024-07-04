@@ -5653,7 +5653,7 @@ leaflet.unfolded > headerbar.titlebar.tweak-titlebar-left, leaflet.unfolded > bo
 
 .nautilus-window:not(.view) headerbar,
 .nautilus-window .sidebar-pane headerbar {
-  background-image: image(#f6f9fb);
+  background-image: image(#32343D);
   background-repeat: no-repeat;
   background-size: 38px auto;
   background-position: left center;
@@ -5780,7 +5780,7 @@ leaflet.unfolded > headerbar.titlebar.tweak-titlebar-left, leaflet.unfolded > bo
 
 .nautilus-window flap.unfolded,
 .nautilus-window .sidebar-pane > toolbarview {
-  background-color: #f6f9fb;
+  background-color: #32343D;
   background-image: image(#32343D);
   background-size: 38px auto;
   background-repeat: no-repeat;
@@ -5796,7 +5796,7 @@ leaflet.unfolded > headerbar.titlebar.tweak-titlebar-left, leaflet.unfolded > bo
 .nautilus-window flap.unfolded > placessidebar,
 .nautilus-window .sidebar-pane > toolbarview > placessidebar {
   background-color: transparent;
-  color: #575a60;
+  color: #F6F6FB;
   padding: 0;
 }
 
@@ -5810,7 +5810,7 @@ leaflet.unfolded > headerbar.titlebar.tweak-titlebar-left, leaflet.unfolded > bo
 .nautilus-window .sidebar-pane > toolbarview > placessidebar row.sidebar-row {
   margin: 0;
   transition: none;
-  color: #575a60;
+  color: #F6F6FB;
   border-radius: 0;
   padding: 2px 0;
   background-repeat: no-repeat;

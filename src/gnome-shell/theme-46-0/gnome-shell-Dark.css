@@ -3483,12 +3483,12 @@ StWidget.focused .app-grid-running-dot {
 }
 
 .quick-slider > StBoxLayout {
-  spacing: 6px;
+  spacing: 3px !important;
 }
 
 .quick-slider .slider-bin {
   min-height: 16px;
-  padding: 6px;
+  padding: 3px !important;
   border-radius: 16px;
 }
 
