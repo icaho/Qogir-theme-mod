@@ -1,7 +1,7 @@
 // Dark sidebar theme apps
 $side_theme_bg: $dark_sidebar_icon_bg;
-$side_theme_fg: rgba($dark_sidebar_icon_fg, 0.8);
-$side_theme_alt_fg: $dark_sidebar_icon_fg;
+$side_theme_fg: rgba($dark_sidebar_fg, 0.8);
+$side_theme_alt_fg: $dark_sidebar_fg;
 
 %side_background {
   color: $side_theme_fg;
@@ -14,12 +14,12 @@ $side_theme_alt_fg: $dark_sidebar_icon_fg;
 
 %side_buttons {
   color: $side_theme_fg;
-  background-color: rgba($dark_sidebar_icon_fg, 0.15);
+  background-color: rgba($dark_sidebar_fg, 0.15);
   border: none;
 
   &:hover {
     color: $side_theme_alt_fg;
-    background-color: rgba($dark_sidebar_icon_fg, 0.25);
+    background-color: rgba($dark_sidebar_fg, 0.25);
   }
 
   &:focus {
@@ -45,7 +45,7 @@ $side_theme_alt_fg: $dark_sidebar_icon_fg;
 
     &:hover {
       color: $side_theme_alt_fg;
-      background-color: rgba($dark_sidebar_icon_fg, 0.15);
+      background-color: rgba($dark_sidebar_fg, 0.15);
     }
 
     &:focus {
@@ -249,7 +249,7 @@ $side_theme_alt_fg: $dark_sidebar_icon_fg;
 
     > placessidebar {
       background-color: transparent;
-      color: $dark_sidebar_icon_fg;
+      color: $dark_sidebar_fg;
       padding: 0;
 
       list {
@@ -260,12 +260,12 @@ $side_theme_alt_fg: $dark_sidebar_icon_fg;
       row.sidebar-row {
         margin: 0;
         transition: none;
-        color: $dark_sidebar_icon_fg;
+        color: $dark_sidebar_fg;
         border-radius: 0;
         padding: 2px 0;
         background-repeat: no-repeat;
 
-        .sidebar-icon { color: transparentize($dark_sidebar_icon_fg, 0.15); }
+        .sidebar-icon { color: transparentize($dark_sidebar_fg, 0.15); }
 
         image.sidebar-icon {
           padding-right: 2px;

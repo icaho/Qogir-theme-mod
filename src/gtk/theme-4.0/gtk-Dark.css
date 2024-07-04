@@ -5535,27 +5535,27 @@ statusbar {
 }
 
 leaflet.unfolded > box:last-child popover.background > contents, leaflet.unfolded > box:last-child popover.background > arrow, leaflet.unfolded > box:last-child {
-  color: rgba(246, 246, 251, 0.8);
+  color: rgba(216, 222, 223, 0.8);
   background-color: #32343D;
 }
 
 leaflet.unfolded > box:last-child popover.background > contents:disabled, leaflet.unfolded > box:last-child popover.background > arrow:disabled, leaflet.unfolded > box:disabled:last-child, leaflet.unfolded > box:last-child popover.background > contents label:disabled, leaflet.unfolded > box:last-child popover.background > arrow label:disabled, leaflet.unfolded > box:last-child label:disabled {
-  color: rgba(246, 246, 251, 0.35);
+  color: rgba(216, 222, 223, 0.35);
 }
 
 .sidebar-pane datechooser button, leaflet.unfolded > box:last-child button {
-  color: rgba(246, 246, 251, 0.8);
-  background-color: rgba(246, 246, 251, 0.15);
+  color: rgba(216, 222, 223, 0.8);
+  background-color: rgba(216, 222, 223, 0.15);
   border: none;
 }
 
 .sidebar-pane datechooser button:hover, leaflet.unfolded > box:last-child button:hover {
-  color: #F6F6FB;
-  background-color: rgba(246, 246, 251, 0.25);
+  color: #d8dedf;
+  background-color: rgba(216, 222, 223, 0.25);
 }
 
 .sidebar-pane datechooser button:focus, leaflet.unfolded > box:last-child button:focus {
-  color: rgba(246, 246, 251, 0.8);
+  color: rgba(216, 222, 223, 0.8);
   box-shadow: none;
 }
 
@@ -5565,24 +5565,24 @@ leaflet.unfolded > box:last-child popover.background > contents:disabled, leafle
 }
 
 .sidebar-pane datechooser button:disabled, leaflet.unfolded > box:last-child button:disabled {
-  color: rgba(246, 246, 251, 0.35);
-  background-color: rgba(246, 246, 251, 0.08);
+  color: rgba(216, 222, 223, 0.35);
+  background-color: rgba(216, 222, 223, 0.08);
 }
 
 leaflet.unfolded > box:last-child popover.background > contents .button, leaflet.unfolded > box:last-child popover.background > contents button, leaflet.unfolded > box:last-child popover.background > contents modelbutton, leaflet.unfolded > box:last-child popover.background > arrow .button, leaflet.unfolded > box:last-child popover.background > arrow button, leaflet.unfolded > box:last-child popover.background > arrow modelbutton, leaflet.unfolded > headerbar.titlebar.tweak-titlebar-left button, leaflet.unfolded > box:last-child > headerbar button, .sidebar-pane datechooser button.flat, leaflet.unfolded > box:last-child button.flat {
   border: none;
   background: none;
   box-shadow: none;
-  color: rgba(246, 246, 251, 0.8);
+  color: rgba(216, 222, 223, 0.8);
 }
 
 leaflet.unfolded > box:last-child popover.background > contents .button:hover, leaflet.unfolded > box:last-child popover.background > contents button:hover, leaflet.unfolded > box:last-child popover.background > contents modelbutton:hover, leaflet.unfolded > box:last-child popover.background > arrow .button:hover, leaflet.unfolded > box:last-child popover.background > arrow button:hover, leaflet.unfolded > box:last-child popover.background > arrow modelbutton:hover, leaflet.unfolded > headerbar.titlebar.tweak-titlebar-left button:hover, leaflet.unfolded > box:last-child > headerbar button:hover, .sidebar-pane datechooser button.flat:hover, leaflet.unfolded > box:last-child button.flat:hover {
-  color: #F6F6FB;
-  background-color: rgba(246, 246, 251, 0.15);
+  color: #d8dedf;
+  background-color: rgba(216, 222, 223, 0.15);
 }
 
 leaflet.unfolded > box:last-child popover.background > contents .button:focus, leaflet.unfolded > box:last-child popover.background > contents button:focus, leaflet.unfolded > box:last-child popover.background > contents modelbutton:focus, leaflet.unfolded > box:last-child popover.background > arrow .button:focus, leaflet.unfolded > box:last-child popover.background > arrow button:focus, leaflet.unfolded > box:last-child popover.background > arrow modelbutton:focus, leaflet.unfolded > headerbar.titlebar.tweak-titlebar-left button:focus, leaflet.unfolded > box:last-child > headerbar button:focus, .sidebar-pane datechooser button.flat:focus, leaflet.unfolded > box:last-child button.flat:focus {
-  color: rgba(246, 246, 251, 0.8);
+  color: rgba(216, 222, 223, 0.8);
   box-shadow: none;
 }
 
@@ -5592,26 +5592,26 @@ leaflet.unfolded > box:last-child popover.background > contents .button:active, 
 }
 
 leaflet.unfolded > box:last-child popover.background > contents .button:disabled, leaflet.unfolded > box:last-child popover.background > contents button:disabled, leaflet.unfolded > box:last-child popover.background > contents modelbutton:disabled, leaflet.unfolded > box:last-child popover.background > arrow .button:disabled, leaflet.unfolded > box:last-child popover.background > arrow button:disabled, leaflet.unfolded > box:last-child popover.background > arrow modelbutton:disabled, leaflet.unfolded > headerbar.titlebar.tweak-titlebar-left button:disabled, leaflet.unfolded > box:last-child > headerbar button:disabled, .sidebar-pane datechooser button.flat:disabled, leaflet.unfolded > box:last-child button.flat:disabled {
-  color: rgba(246, 246, 251, 0.35);
+  color: rgba(216, 222, 223, 0.35);
 }
 
 leaflet.unfolded > box:last-child list > row {
-  color: rgba(246, 246, 251, 0.8);
+  color: rgba(216, 222, 223, 0.8);
   background-color: #32343D;
 }
 
 leaflet.unfolded > box:last-child list > row:hover {
-  color: #F6F6FB;
-  background-color: #464750;
+  color: #d8dedf;
+  background-color: #43454d;
 }
 
 leaflet.unfolded > box:last-child list > row:active {
-  color: #F6F6FB;
-  background-color: #51535b;
+  color: #d8dedf;
+  background-color: #4d4f57;
 }
 
 leaflet.unfolded > box:last-child list > row:disabled, leaflet.unfolded > box:last-child list > row label:disabled {
-  color: rgba(246, 246, 251, 0.35);
+  color: rgba(216, 222, 223, 0.35);
 }
 
 leaflet.unfolded > box:last-child list > row:selected:hover {
@@ -5619,22 +5619,22 @@ leaflet.unfolded > box:last-child list > row:selected:hover {
 }
 
 .sidebar-pane entry, leaflet.unfolded > box:last-child entry {
-  color: rgba(246, 246, 251, 0.8);
-  background-color: rgba(246, 246, 251, 0.1);
+  color: rgba(216, 222, 223, 0.8);
+  background-color: rgba(216, 222, 223, 0.1);
   border-color: rgba(255, 255, 255, 0.12);
 }
 
 .sidebar-pane entry image, leaflet.unfolded > box:last-child entry image {
-  color: rgba(246, 246, 251, 0.8);
+  color: rgba(216, 222, 223, 0.8);
 }
 
 .sidebar-pane entry:focus-within, leaflet.unfolded > box:last-child entry:focus-within {
-  background-color: rgba(246, 246, 251, 0.12);
+  background-color: rgba(216, 222, 223, 0.12);
   border-color: #5294e2;
 }
 
 .sidebar-pane entry:disabled, leaflet.unfolded > box:last-child entry:disabled, .sidebar-pane entry label:disabled, leaflet.unfolded > box:last-child entry label:disabled, .sidebar-pane entry image:disabled, leaflet.unfolded > box:last-child entry image:disabled {
-  color: rgba(246, 246, 251, 0.35);
+  color: rgba(216, 222, 223, 0.35);
 }
 
 .sidebar-pane searchbar, leaflet.unfolded > box:last-child searchbar {
@@ -5649,7 +5649,7 @@ leaflet.unfolded > box:last-child list > row:selected:hover {
 }
 
 leaflet.unfolded > headerbar.titlebar.tweak-titlebar-left, leaflet.unfolded > box:last-child > headerbar {
-  color: rgba(246, 246, 251, 0.8);
+  color: rgba(216, 222, 223, 0.8);
   background-color: #32343D;
   border: none;
   box-shadow: none;
@@ -5800,7 +5800,7 @@ leaflet.unfolded > headerbar.titlebar.tweak-titlebar-left, leaflet.unfolded > bo
 .nautilus-window flap.unfolded > placessidebar,
 .nautilus-window .sidebar-pane > toolbarview > placessidebar {
   background-color: transparent;
-  color: #F6F6FB;
+  color: #d8dedf;
   padding: 0;
 }
 
@@ -5814,7 +5814,7 @@ leaflet.unfolded > headerbar.titlebar.tweak-titlebar-left, leaflet.unfolded > bo
 .nautilus-window .sidebar-pane > toolbarview > placessidebar row.sidebar-row {
   margin: 0;
   transition: none;
-  color: #F6F6FB;
+  color: #d8dedf;
   border-radius: 0;
   padding: 2px 0;
   background-repeat: no-repeat;
@@ -5822,7 +5822,7 @@ leaflet.unfolded > headerbar.titlebar.tweak-titlebar-left, leaflet.unfolded > bo
 
 .nautilus-window flap.unfolded > placessidebar row.sidebar-row .sidebar-icon,
 .nautilus-window .sidebar-pane > toolbarview > placessidebar row.sidebar-row .sidebar-icon {
-  color: rgba(246, 246, 251, 0.85);
+  color: rgba(216, 222, 223, 0.85);
 }
 
 .nautilus-window flap.unfolded > placessidebar row.sidebar-row image.sidebar-icon,
@@ -6132,7 +6132,7 @@ navigation-view-page > toolbarview > scrolledwindow > viewport > clamp > box > b
 }
 
 leaflet.unfolded > box:last-child list, leaflet.unfolded > box:last-child .view {
-  color: rgba(246, 246, 251, 0.8);
+  color: rgba(216, 222, 223, 0.8);
   background-color: transparent;
 }
 
@@ -6145,20 +6145,20 @@ leaflet.unfolded > separator, leaflet.unfolded > separator.sidebar {
 }
 
 toastoverlay event.color-light {
-  color: rgba(246, 246, 251, 0.8);
+  color: rgba(216, 222, 223, 0.8);
 }
 
 toastoverlay label.weekday {
-  color: rgba(246, 246, 251, 0.35);
+  color: rgba(216, 222, 223, 0.35);
 }
 
 toastoverlay label.weeknum {
-  color: rgba(246, 246, 251, 0.55);
+  color: rgba(216, 222, 223, 0.55);
 }
 
 toastoverlay widget.current-week {
   border-radius: 6px;
-  background-color: rgba(246, 246, 251, 0.08);
+  background-color: rgba(216, 222, 223, 0.08);
 }
 
 toastoverlay navigator > button.flat.pill.popup.toggle {
@@ -6168,13 +6168,13 @@ toastoverlay navigator > button.flat.pill.popup.toggle {
 }
 
 .sidebar-pane datechooser {
-  color: rgba(246, 246, 251, 0.8);
+  color: rgba(216, 222, 223, 0.8);
 }
 
 .sidebar-pane datechooser popover > arrow,
 .sidebar-pane datechooser popover > contents {
   background-color: #32343D;
-  color: rgba(246, 246, 251, 0.8);
+  color: rgba(216, 222, 223, 0.8);
 }
 
 agenda-view list.background {
@@ -6182,11 +6182,11 @@ agenda-view list.background {
 }
 
 agenda-view list.background, agenda-view list.background row {
-  color: rgba(246, 246, 251, 0.8);
+  color: rgba(216, 222, 223, 0.8);
 }
 
 agenda-view list.background .dim-label, agenda-view list.background label.separator, agenda-view list.background entry > text > placeholder, agenda-view list.background spinbutton:not(.vertical) > text > text > placeholder, agenda-view list.background spinbutton.vertical > text > text > placeholder, agenda-view list.background headerbar .subtitle, headerbar agenda-view list.background .subtitle, agenda-view list.background row label.subtitle, row agenda-view list.background label.subtitle, agenda-view list.background row.expander:not(:checked) image.expander-row-arrow, row.expander:not(:checked) agenda-view list.background image.expander-row-arrow {
-  color: rgba(246, 246, 251, 0.45);
+  color: rgba(216, 222, 223, 0.45);
 }
 
 .details-page {
@@ -7575,7 +7575,7 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 }
 
 .sidebar-pane {
-  color: rgba(246, 246, 251, 0.8);
+  color: rgba(216, 222, 223, 0.8);
   background-color: #32343D;
 }
 
@@ -7594,17 +7594,17 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 }
 
 .sidebar-pane headerbar {
-  color: rgba(246, 246, 251, 0.8);
+  color: rgba(216, 222, 223, 0.8);
 }
 
 .sidebar-pane headerbar button:not(.suggested-action):not(.destructive-action) {
-  color: rgba(246, 246, 251, 0.8);
+  color: rgba(216, 222, 223, 0.8);
   border: none;
 }
 
 .sidebar-pane headerbar button:not(.suggested-action):not(.destructive-action):hover {
-  color: #F6F6FB;
-  background-color: rgba(246, 246, 251, 0.25);
+  color: #d8dedf;
+  background-color: rgba(216, 222, 223, 0.25);
 }
 
 .sidebar-pane headerbar button:not(.suggested-action):not(.destructive-action):active, .sidebar-pane headerbar button:not(.suggested-action):not(.destructive-action):checked {
@@ -7619,21 +7619,21 @@ toolbarview.undershoot-bottom scrolledwindow > undershoot.bottom {
 }
 
 .sidebar-pane .navigation-sidebar > row {
-  color: #F6F6FB;
+  color: #d8dedf;
 }
 
 .sidebar-pane .navigation-sidebar > row:hover:not(:selected):not(:focus-within) {
-  color: rgba(246, 246, 251, 0.8);
-  background-color: rgba(246, 246, 251, 0.06);
+  color: rgba(216, 222, 223, 0.8);
+  background-color: rgba(216, 222, 223, 0.06);
   transition: none;
 }
 
 .sidebar-pane .navigation-sidebar > row:active, .sidebar-pane .navigation-sidebar > row:active:hover, .sidebar-pane .navigation-sidebar > row:checked {
-  background-color: rgba(246, 246, 251, 0.1);
+  background-color: rgba(216, 222, 223, 0.1);
 }
 
 .sidebar-pane .dim-label, .sidebar-pane label.separator, .sidebar-pane entry > text > placeholder, .sidebar-pane spinbutton:not(.vertical) > text > text > placeholder, .sidebar-pane spinbutton.vertical > text > text > placeholder, .sidebar-pane headerbar .subtitle, headerbar .sidebar-pane .subtitle, .sidebar-pane popover.background label.separator, popover.background .sidebar-pane label.separator, .sidebar-pane row label.subtitle, row .sidebar-pane label.subtitle, .sidebar-pane row.expander:not(:checked) image.expander-row-arrow, row.expander:not(:checked) .sidebar-pane image.expander-row-arrow {
-  color: rgba(246, 246, 251, 0.45);
+  color: rgba(216, 222, 223, 0.45);
 }
 
 .sidebar-pane toolbarview.undershoot-top scrolledwindow > undershoot.top {
