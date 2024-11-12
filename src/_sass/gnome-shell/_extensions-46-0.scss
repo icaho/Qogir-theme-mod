@@ -19,6 +19,7 @@
       margin: 2px !important;
       border-radius: 0;
       background-color: $selected_bg_color;
+      offset-y: 0 !important;
     }
 
     > StWidget.focused .app-grid-running-dot {
@@ -33,7 +34,7 @@
     min-width: 1.4em;
     min-height: 1.4em;
     margin: 0; // unset margin/padding
-    padding: 0;
+    padding: 0.2em;
     border-radius: $circular_radius;
     font-weight: 700;
     text-align: center;
@@ -48,6 +49,10 @@
     background-color: $selected_bg_color;
     color: $selected_fg_color;
   }
+}
+
+.dash-label.bottom {
+  margin-bottom: $dash_padding + $base_padding !important;
 }
 
 .popup-menu.app-well-menu {
@@ -127,5 +132,46 @@
   &-build-icon {
     color: $alt_fg_color;
     -st-icon-style: symbolic;
+  }
+}
+
+//
+// Dash to Panel
+//
+
+.dashtopanelMainPanel {
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+
+  .dash-background {
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .overview-tile {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+
+    .overview-icon {
+      padding: 0 !important;
+      margin: 0 !important;
+      border: none !important;
+    }
+  }
+
+  .show-apps {
+    color: $panel_fg !important;
+    border-radius: 0 !important;
+
+    &:hover {
+      background: rgba($panel_fg, 0.1) !important;
+    }
+
+    &:active {
+      background: rgba($panel_fg, 0.2) !important;
+    }
   }
 }

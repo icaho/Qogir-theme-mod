@@ -51,45 +51,50 @@ $panel_height: 2.1em;
     transition-duration: 150ms;
     text-shadow: none;
     border: none;
+    border-bottom: 2px solid transparent;
     box-shadow: none;
     border-radius: 0;
 
-    &:hover {
+    &:hover, &:focus {
       color: $panel_fg;
       background-color: rgba($panel_fg, 0.08);
       box-shadow: none;
       border-radius: 0;
     }
 
-    &:active, &:overview, &:focus, &:checked {
+    &:active, &:checked {
       color: $panel_fg;
       background-color: rgba($panel_fg, 0.16);
-      box-shadow: inset 0 -2px 0 $selected_bg_color;
+      border-color: $selected_bg_color;
       border-radius: 0;
 
       & > .system-status-icon { icon-shadow: none; }
     }
 
     &.clock-display {
+      border: none;
+      border-bottom: 2px solid transparent !important;
+
       .clock {
         transition-duration: 0;
         border: none;
         border-radius: 0;
       }
 
-      &:hover {
+      &:hover, &:focus {
         color: $panel_fg;
         background-color: rgba($panel_fg, 0.08) !important;
         box-shadow: none;
       }
 
-      &:active, &:overview, &:focus, &:checked {
+      &:active, &:checked {
         color: $panel_fg;
         background-color: rgba($panel_fg, 0.16) !important;
-        box-shadow: inset 0 -2px 0 $selected_bg_color !important;
+        box-shadow: none;
+        border-color: $selected_bg_color !important;
       }
 
-      &, &:active, &:overview, &:focus, &:checked {
+      &, &:active, &:hover, &:focus, &:checked {
         .clock { //reset
           background-color: transparent;
           box-shadow: none
@@ -118,6 +123,22 @@ $panel_height: 2.1em;
       -st-icon-style: symbolic;
       // dimensions of the icon are hardcoded
     }
+
+    // screen activity indicators
+    &.screen-recording-indicator,
+    &.screen-sharing-indicator {
+      StIcon {
+        icon-size: $scalable_icon_size;
+      }
+    }
+
+    &.screen-recording-indicator {
+      @include panel_button($bg:$recording_indicator_color, $style: filled);
+    }
+
+    &.screen-sharing-indicator {
+      @include panel_button($bg:$privacy_indicator_color, $style: filled);
+    }
   }
 
   // lock & login screen styles
@@ -136,6 +157,16 @@ $panel_height: 2.1em;
           }
         }
       }
+
+      .panel-button {
+        &.screen-recording-indicator {
+          @include panel_button($bg:$recording_indicator_color, $style: filled);
+        }
+
+        &.screen-sharing-indicator {
+          @include panel_button($bg:$privacy_indicator_color, $style: filled);
+        }
+      }
     }
   }
 
@@ -150,8 +181,11 @@ $panel_height: 2.1em;
   }
 
   // indicator for active
-  .screencast-indicator,
-  .remote-access-indicator { color: $warning_color; }
+  .privacy-indicator,
+  .remote-access-indicator,
+  .screencast-indicator {
+    color: $privacy_indicator_color;
+  }
 
   .popup-menu-arrow {
     width: 0;
