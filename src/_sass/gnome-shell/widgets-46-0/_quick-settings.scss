@@ -1,10 +1,10 @@
 .quick-settings {
   padding: $base_padding * 2 !important;
-  border-radius: $material_radius + $base_padding !important;
+  border-radius: $material_radius + $base_padding * 2 !important;
   margin-top: $base_padding !important;
 
   .icon-button, .button {
-    padding: $cont_padding * 1.75;
+    padding: $base_padding * 1.75;
 
     > StIcon {
       icon-size: 16px;
@@ -13,8 +13,8 @@
 }
 
 .quick-settings-grid {
-  spacing-rows: $cont_padding * 2;
-  spacing-columns: $cont_padding * 2;
+  spacing-rows: $base_padding * 2;
+  spacing-columns: $base_padding * 2;
 }
 
 %toggle_button {
@@ -64,14 +64,14 @@
 }
 
 .quick-toggle {
-  & > StBoxLayout { spacing: $cont_padding; }
+  & > StBoxLayout { spacing: $base_padding; }
 
   /* Move padding into the box; this is to allow menu arrows
      to extend to the border */
   &.button { padding: 0; }
-  & > StBoxLayout { padding: 0 $cont_padding * 2; }
-  &:ltr > StBoxLayout { padding-left: $cont_padding * 2.5; }
-  &:rtl > StBoxLayout { padding-right: $cont_padding * 2.5; }
+  & > StBoxLayout { padding: 0 $base_padding * 2; }
+  &:ltr > StBoxLayout { padding-left: $base_padding * 2.5; }
+  &:rtl > StBoxLayout { padding-right: $base_padding * 2.5; }
 
   .quick-toggle-title { font-weight: bold; }
 
@@ -89,17 +89,17 @@
     max-width: auto;
     border: none !important;
 
-    &:ltr { border-radius: $bt_radius 0 0 $bt_radius; }
-    &:ltr > StBoxLayout { padding-right: $cont_padding * 1.5; }
-    &:rtl { border-radius: 0 $bt_radius $bt_radius 0; }
-    &:rtr > StBoxLayout { padding-left: $cont_padding * 1.5; }
+    &:ltr { border-radius: $material_radius 0 0 $material_radius; }
+    &:ltr > StBoxLayout { padding-right: $base_padding * 1.5; }
+    &:rtl { border-radius: 0 $material_radius $material_radius 0; }
+    &:rtr > StBoxLayout { padding-left: $base_padding * 1.5; }
 
-    &:ltr:last-child { border-radius: $bt_radius; }
-    &:rtl:last-child { border-radius: $bt_radius; }
+    &:ltr:last-child { border-radius: $material_radius; }
+    &:rtl:last-child { border-radius: $material_radius; }
   }
 
   .quick-toggle-arrow {
-    padding: $cont_padding $cont_padding * 1.75;
+    padding: $base_padding $base_padding * 1.75;
     @extend %toggle_button;
 
     &, &:hover, &:active {
@@ -107,24 +107,24 @@
     }
 
     &:ltr {
-      border-radius: 0 $bt_radius $bt_radius 0;
+      border-radius: 0 $material_radius $material_radius 0;
       border-left-width: 1px;
     }
 
     &:rtl {
-      border-radius: $bt_radius 0 0 $bt_radius;
+      border-radius: $material_radius 0 0 $material_radius;
       border-right-width: 1px;
     }
   }
 }
 
 .quick-slider {
-  & > StBoxLayout { spacing: 0.5 * $cont_padding !important; }
+  & > StBoxLayout { spacing: $base_padding; }
 
   .slider-bin {
     &:focus { @include button(focus); }
     min-height: 16px; // slider size
-    padding: 0.5 * $cont_padding !important;
+    padding: $base_padding;
     border-radius: 16px;
   }
 
@@ -133,6 +133,7 @@
   }
 
   .icon-button {
+    padding: $base_padding;
     background-color: transparent;
     color: $text_color !important;
 
@@ -150,8 +151,8 @@
   background-color: $menu_bg !important;
   color: $text_color !important;
   border-radius: $material_radius !important;
-  padding: $cont_padding * 2 0 !important;
-  margin: $cont_padding * 2 $cont_padding * 3 + 1px 0 !important;
+  padding: $base_padding * 2 0 !important;
+  margin: $base_padding * 2 $base_padding * 3 + 1px 0 !important;
   border: if($variant == 'light', 0, 1px) solid $borders_color !important;
 
   .popup-menu-item {
@@ -163,14 +164,14 @@
   }
 
   & .header {
-    spacing-rows: 0.5 * $cont_padding;
-    spacing-columns: $cont_padding * 2;
-    padding: 0 $cont_padding * 2 $cont_padding * 2 !important;
+    spacing-rows: 0.5 * $base_padding;
+    spacing-columns: $base_padding * 2;
+    padding: 0 $base_padding * 2 $base_padding * 2 !important;
 
     & .icon {
       icon-size: 16px * 1.5; // a non-standard symbolic size but ok
       border-radius: $circular_radius;
-      padding: 1.5 * $cont_padding;
+      padding: 1.5 * $base_padding;
       background-color: rgba($fg_color, 0.12) !important;
 
       &.active {
@@ -190,7 +191,7 @@
 }
 
 .quick-settings-system-item {
-  & > StBoxLayout { spacing: 2 * $cont_padding; }
+  & > StBoxLayout { spacing: 2 * $base_padding; }
 
   .icon-button {
     // background-color: $button_bg;
@@ -252,7 +253,7 @@
   }
   & .close-button {
     @extend .icon-button;
-    padding: $cont_padding;
+    padding: $base_padding;
   }
 
   &.popup-inactive-menu-item { color: $fg_color; }

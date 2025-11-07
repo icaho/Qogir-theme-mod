@@ -423,7 +423,6 @@ StEntry StLabel.hint-text {
 
 /* Slider */
 .slider {
-  height: 20px;
   color: #282A33;
   -slider-height: 4px;
   -slider-background-color: rgba(255, 255, 255, 0.12);
@@ -540,12 +539,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding: 6px;
   color: rgba(230, 235, 239, 0.75) !important;
   border-radius: 0 !important;
-  border: none !important;
+  border-top: none !important;
 }
 
 .popup-menu-item:checked {
   background-color: #21232a !important;
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.12) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: none !important;
   color: #e6ebef !important;
   border-radius: 0 !important;
 }
@@ -580,7 +580,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .popup-sub-menu {
   background-color: #21232a !important;
   border: none !important;
-  box-shadow: inset 0 -1px rgba(255, 255, 255, 0.12) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: none !important;
   border-radius: 0 !important;
 }
 
@@ -2827,11 +2828,11 @@ StWidget.focused .app-grid-running-dot {
 }
 
 #calendarArea {
-  padding: 6px 10px;
+  padding: 4px 10px;
 }
 
 .datemenu-popover {
-  border-radius: 8px;
+  border-radius: 3px;
 }
 
 .datemenu-calendar-column {
@@ -2852,7 +2853,7 @@ StWidget.focused .app-grid-running-dot {
 
 .datemenu-today-button {
   padding: 9px;
-  border-radius: 2px;
+  border-radius: 3px;
   margin: 0;
   border: 1px solid rgba(40, 42, 51, 0);
   background: none;
@@ -3002,7 +3003,7 @@ StWidget.focused .app-grid-running-dot {
 .world-clocks-button,
 .weather-button,
 .events-button {
-  border-radius: 2px;
+  border-radius: 3px;
   padding: 8px 10px;
   margin: 4px;
   text-shadow: none;
@@ -3101,9 +3102,8 @@ StWidget.focused .app-grid-running-dot {
 }
 
 .weather-button .weather-box .weather-grid .weather-forecast-time {
-  font-size: 10pt;
-  padding-top: 0.2em;
-  padding-bottom: 0.4em;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .weather-button .weather-box .weather-grid .weather-forecast-icon {
@@ -3113,11 +3113,6 @@ StWidget.focused .app-grid-running-dot {
 
 .weather-button .weather-box .weather-grid .weather-forecast-temp {
   font-weight: bold;
-}
-
-.world-clocks-button:active *,
-.weather-button:active * {
-  color: #ffffff;
 }
 
 .events-button .events-title {
@@ -3144,8 +3139,10 @@ StWidget.focused .app-grid-running-dot {
   font-style: italic;
 }
 
-.events-button:active .events-list, .events-button:active .events-title, .events-button:active .event-time {
-  color: #ffffff !important;
+.world-clocks-button:active *,
+.weather-button:active *,
+.events-button:active * {
+  color: #ffffff;
 }
 
 /* Message List */
@@ -3216,7 +3213,7 @@ StWidget.focused .app-grid-running-dot {
 }
 
 .message {
-  border-radius: 2px;
+  border-radius: 3px;
   padding: 0;
   margin: 0;
   color: #e6ebef;
@@ -3439,7 +3436,7 @@ StWidget.focused .app-grid-running-dot {
 
 .quick-settings {
   padding: 12px !important;
-  border-radius: 9px !important;
+  border-radius: 15px !important;
   margin-top: 6px !important;
 }
 
@@ -3546,7 +3543,7 @@ StWidget.focused .app-grid-running-dot {
 }
 
 .quick-menu-toggle .quick-toggle:ltr {
-  border-radius: 2px 0 0 2px;
+  border-radius: 3px 0 0 3px;
 }
 
 .quick-menu-toggle .quick-toggle:ltr > StBoxLayout {
@@ -3554,7 +3551,7 @@ StWidget.focused .app-grid-running-dot {
 }
 
 .quick-menu-toggle .quick-toggle:rtl {
-  border-radius: 0 2px 2px 0;
+  border-radius: 0 3px 3px 0;
 }
 
 .quick-menu-toggle .quick-toggle:rtr > StBoxLayout {
@@ -3562,11 +3559,11 @@ StWidget.focused .app-grid-running-dot {
 }
 
 .quick-menu-toggle .quick-toggle:ltr:last-child {
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .quick-menu-toggle .quick-toggle:rtl:last-child {
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .quick-menu-toggle .quick-toggle-arrow {
@@ -3578,12 +3575,12 @@ StWidget.focused .app-grid-running-dot {
 }
 
 .quick-menu-toggle .quick-toggle-arrow:ltr {
-  border-radius: 0 2px 2px 0;
+  border-radius: 0 3px 3px 0;
   border-left-width: 1px;
 }
 
 .quick-menu-toggle .quick-toggle-arrow:rtl {
-  border-radius: 2px 0 0 2px;
+  border-radius: 3px 0 0 3px;
   border-right-width: 1px;
 }
 
@@ -3610,6 +3607,7 @@ StWidget.focused .app-grid-running-dot {
 }
 
 .quick-slider .icon-button, .quick-slider .background-app-item .close-button, .background-app-item .quick-slider .close-button {
+  padding: 6px;
   background-color: transparent;
   color: #e0e5eb !important;
 }

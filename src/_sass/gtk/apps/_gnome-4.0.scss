@@ -1,7 +1,7 @@
 // Dark sidebar theme apps
 $side_theme_bg: $dark_sidebar_icon_bg;
-$side_theme_fg: rgba($dark_sidebar_fg, 0.8);
-$side_theme_alt_fg: $dark_sidebar_fg;
+$side_theme_fg: $dark_sidebar_icon_fg;
+$side_theme_alt_fg: rgba($dark_sidebar_icon_fg, 0.8);
 
 %side_background {
   color: $side_theme_alt_fg;
@@ -13,13 +13,13 @@ $side_theme_alt_fg: $dark_sidebar_fg;
 }
 
 %side_buttons {
-  color: $side_theme_fg;
-  background-color: rgba($dark_sidebar_fg, 0.15);
+  color: $side_theme_alt_fg;
+  background-color: rgba($side_theme_fg, 0.15);
   border: none;
 
   &:hover {
-    color: $side_theme_alt_fg;
-    background-color: rgba($dark_sidebar_fg, 0.25);
+    color: $side_theme_fg;
+    background-color: rgba($side_theme_fg, 0.25);
   }
 
   &:focus {
@@ -44,8 +44,8 @@ $side_theme_alt_fg: $dark_sidebar_fg;
     color: $side_theme_alt_fg;
 
     &:hover {
-      color: $side_theme_alt_fg;
-      background-color: rgba($dark_sidebar_fg, 0.15);
+      color: $side_theme_fg;
+      background-color: rgba($side_theme_fg, 0.15);
     }
 
     &:focus {
@@ -191,6 +191,38 @@ $side_theme_alt_fg: $dark_sidebar_fg;
   trough { background-color: darken($dark_sidebar_bg, 5%); }
 }
 
+%nautilus_view {
+  border: 1px solid transparent;
+
+  &:hover {
+    border-color: rgba($selected_bg_color, 0.65);
+    background-color: rgba($selected_bg_color, 0.15);
+  }
+
+  &:active {
+    border-color: rgba($selected_bg_color, 0.75);
+    background-color: rgba($selected_bg_color, 0.25);
+    transition: $shorter_transition;
+  }
+
+  &:selected {
+    border-color: $selected_bg_color;
+    background-color: rgba($selected_bg_color, 0.35);
+    color: $selected_bg_color;
+    transition: $shorter_transition;
+
+    label {
+      color: $selected_bg_color;
+    }
+
+    &:hover, &:active {
+      color: $selected_bg_color;
+      background-color: rgba($selected_bg_color, 0.42);
+    }
+  }
+}
+
+#NautilusFileChooser,
 .nautilus-window {
   headerbar {
     entry { margin: 0; } // Why need this ?
@@ -212,14 +244,11 @@ $side_theme_alt_fg: $dark_sidebar_fg;
     }
   }
 
- &:not(.view) headerbar,
   .sidebar-pane headerbar {
     color: $alt_fg_color;
-    //padding-left: 38px;
-    @extend %headerbar_image !optional; // Set nautilus headerbar mountain icon
-  }
+    padding-left: 38px;
+    @extend %headerbar_image; // Set nautilus headerbar mountain icon
 
-  &:not(.view) headerbar {
     &, &:backdrop {
       box-shadow: inset 0 -1px if($variant=='light', rgba($dark_sidebar_icon_bg, 0.15), $dark_sidebar_icon_bg),
                   inset 38px 0 0 0 transparent;
@@ -239,7 +268,6 @@ $side_theme_alt_fg: $dark_sidebar_fg;
     }
   }
 
-  flap.unfolded,
   .sidebar-pane > toolbarview {
     background-color: $dark_sidebar_icon_bg;
     background-image: image($dark_sidebar_icon_bg);
@@ -376,28 +404,38 @@ $side_theme_alt_fg: $dark_sidebar_fg;
 
       child.activatable {
         border-radius: $bt_radius * 2;
-        border: 1px solid transparent;
+        @extend %nautilus_view;
+      }
+    }
+  }
 
-        &:hover {
-          border-color: rgba($selected_bg_color, 0.65);
-          background-color: rgba($selected_bg_color, 0.15);
-        }
+  .nautilus-list-view {
+    padding: 0;
+    margin: 0;
+    border-spacing: 0;
+    background-color: $base_color;
 
-        &:active {
-          border-color: rgba($selected_bg_color, 0.75);
-          background-color: rgba($selected_bg_color, 0.25);
-          transition: $shorter_transition;
-        }
+    listview.view {
+      padding: 0;
+      margin: 0;
+      border-spacing: 0;
 
-        &:selected {
-          border-color: $selected_bg_color;
-          background-color: rgba($selected_bg_color, 0.35);
-          color: $selected_bg_color;
-          transition: $shorter_transition;
+      > row.activatable {
+        padding: 0;
+        margin: 0;
+        border-radius: $bt_radius;
+        @extend %nautilus_view;
 
-          &:hover {
-            background-color: rgba($selected_bg_color, 0.42);
+        > cell {
+          padding: 0;
+
+          > widget#NautilusViewCell {
+            padding: $base_padding / 2 $base_padding;
           }
+        }
+
+        + row {
+          margin-top: $base_padding / 2;
         }
       }
     }
@@ -406,28 +444,26 @@ $side_theme_alt_fg: $dark_sidebar_fg;
   placesview {
     label { color: $alt_fg_color; }
   }
+}
 
-  .floating-bar {
-    padding: 3px;
-    background-color: $selected_bg_color;
-    color: $selected_fg_color;
-    border-radius: $bt_radius $bt_radius 0 0;
-    box-shadow: none;
+.floating-bar {
+  padding: 3px;
+  margin: 3px;
+  background-color: $selected_bg_color;
+  color: $selected_fg_color;
+  border-radius: $bt_radius;
+  box-shadow: none;
+  border: none;
+
+  button {
     border: none;
-
-    &.bottom.left { border-top-left-radius: 0; }
-    &.bottom.right { border-top-right-radius: 0; }
-
-    button {
-      border: none;
-      border-radius: $circular_radius;
-      min-height: 0;
-      min-width: 0;
-      padding: 0;
-      margin-right: $cont_padding;
-      -gtk-icon-shadow: none;
-      @extend %selected-button;
-    }
+    border-radius: $circular_radius;
+    min-height: 0;
+    min-width: 0;
+    padding: 0;
+    margin-right: $cont_padding;
+    -gtk-icon-shadow: none;
+    @extend %selected-button;
   }
 }
 
