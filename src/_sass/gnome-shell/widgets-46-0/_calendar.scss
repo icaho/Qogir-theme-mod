@@ -4,7 +4,7 @@
 }
 
 .datemenu-popover {
-  border-radius: if($window == 'round', $material_radius + $base_padding + $base_margin, $material_radius);
+  border-radius: $material_radius;
 }
 
 // calendar menu side column
