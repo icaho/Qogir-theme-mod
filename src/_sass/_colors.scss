@@ -5,8 +5,8 @@
 
 $base_color: if($variant =='light', #ffffff, #282A33);
 $text_color: if($variant == 'light', #4a4c59, #e0e5eb);
-$bg_color: if($variant =='light', #fafbfc, #32343D);
-$fg_color: if($variant =='light', #464853, #e6ebef);
+$bg_color: if($variant =='light', #fafbfc, #171C28);
+$fg_color: if($variant =='light', #1D2433, #e6ebef);
 
 $alt_base_color: if($variant == 'light', darken($base_color, 5%), lighten($base_color, 5%));
 $sec_base_color: if($variant == 'light', darken($base_color, 10%), lighten($base_color, 10%));
@@ -96,7 +96,7 @@ $osd_borders_color: $osd_button_border;
 
 $menu_bg: if($variant=='light', $base_color, $bg_color);
 
-$panel_bg: #21232b;
+$panel_bg: #000000;
 $panel_fg: $osd_fg_color;
 
 $privacy_indicator_color: $warning_color;
