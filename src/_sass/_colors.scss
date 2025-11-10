@@ -15,7 +15,7 @@ $sec_bg_color: if($variant == 'light', darken($bg_color, 10%), lighten($bg_color
 $alt_fg_color: rgba($fg_color, 0.75);
 $sec_fg_color: rgba($fg_color, 0.6);
 
-$selected_fg_color: #cdd6f4;
+$selected_fg_color: #181825;
 $selected_bg_color: #89b4fa;
 
 @if $theme == 'manjaro' { $selected_bg_color: #2eb398; }
