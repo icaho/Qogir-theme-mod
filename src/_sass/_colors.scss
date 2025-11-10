@@ -57,8 +57,8 @@ $insensitive_bg_color: lighten($bg_color, 2%);
 $header_bg: black;
 @if $trans == 'true' and $variant == 'light' { $header_bg: rgba(#ffffff, 0.95); }
 @if $trans == 'false' and $variant == 'light' { $header_bg: #ffffff; }
-@if $trans == 'true' and ($variant == 'dark' or $titlebar == 'dark') { $header_bg: rgba(#313244, 0.97); }
-@if $trans == 'false' and ($variant == 'dark' or $titlebar == 'dark') { $header_bg: #45475a; }
+@if $trans == 'true' and ($variant == 'dark' or $titlebar == 'dark') { $header_bg: rgba(#1e1e2e, 0.97); }
+@if $trans == 'false' and ($variant == 'dark' or $titlebar == 'dark') { $header_bg: #1e1e2e; }
 
 $header_bg_backdrop: if($titlebar == 'dark' or $variant == 'dark', lighten($header_bg, 1.5%), lighten($header_bg, 3%));
 
