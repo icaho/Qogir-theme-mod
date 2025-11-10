@@ -1869,7 +1869,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 #panel {
   font-weight: bold;
   height: 2.1em;
-  background-color: #000000;
+  background-color: #11111b;
   border: none;
   font-feature-settings: "tnum";
   transition-duration: 250ms;
@@ -1895,7 +1895,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 #panel .panel-corner {
   -panel-corner-radius: 0;
-  -panel-corner-background-color: #000000;
+  -panel-corner-background-color: #11111b;
   -panel-corner-border-width: 0;
   -panel-corner-border-color: transparent;
 }
@@ -3401,7 +3401,7 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 .dash-background {
-  background-color: rgba(13, 13, 13, 0.9);
+  background-color: rgba(27, 27, 43, 0.9);
   margin-bottom: 16px;
   padding: 10px;
   border-radius: 12px;

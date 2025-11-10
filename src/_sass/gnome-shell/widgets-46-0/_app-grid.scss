@@ -2,7 +2,7 @@
 /* App Icons */
 
 $app_icon_size: 96px;
-$app_folder_size: 720px;
+$app_folder_size: 620px;
 
 // app icons
 .icon-grid {
@@ -78,13 +78,13 @@ $app_folder_size: 720px;
 .app-folder-dialog {
   width: $app_folder_size;
   height: $app_folder_size;
-  border-radius: $material_radius * 3;
+  border-radius: $material_radius;
   border: 1px solid rgba($osd_fg_color, 0.03);
   padding: 0;
   background-color: rgba($osd_bg_color, 0.9);
 
   & .folder-name-container {
-    padding: 24px 36px 0;
+    padding: 12px 18px 0;
 
     & .folder-name-label {
       @extend %title_1;

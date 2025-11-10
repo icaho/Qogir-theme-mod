@@ -8704,7 +8704,7 @@ dialog-host > dialog.osd:not(progressbar):not(button):not(menubutton):not(splitb
 @define-color wm_icon_active_bg #181825;
 @define-color budgie_tasklist_indicator_color #89b4fa;
 @define-color budgie_tasklist_indicator_color_active #89b4fa;
-@define-color budgie_tasklist_indicator_color_active_window #4a6187;
+@define-color budgie_tasklist_indicator_color_active_window #526993;
 @define-color budgie_tasklist_indicator_color_attention #fab387;
 @define-color STRAWBERRY_100 #FF9262;
 @define-color STRAWBERRY_300 #FF793E;
