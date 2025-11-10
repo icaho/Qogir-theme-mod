@@ -142,12 +142,12 @@ $side_theme_alt_fg: rgba($dark_sidebar_icon_fg, 0.8);
   background-position: bottom right;
 }
 
-%headerbar_image {
+/*%headerbar_image {
   background-image: image($dark_sidebar_icon_bg);
   background-repeat: no-repeat;
   background-size: 38px auto;
   background-position: left center;
-}
+}*/
 
 %nautilus_dir_buttons {
   border-radius: $bt_radius;
@@ -246,12 +246,12 @@ $side_theme_alt_fg: rgba($dark_sidebar_icon_fg, 0.8);
 
   .sidebar-pane headerbar {
     color: $alt_fg_color;
-    padding-left: 38px;
-    @extend %headerbar_image; // Set nautilus headerbar mountain icon
+    /*padding-left: 38px;
+    @extend %headerbar_image; // Set nautilus headerbar mountain icon*/
 
     &, &:backdrop {
       box-shadow: inset 0 -1px if($variant=='light', rgba($dark_sidebar_icon_bg, 0.15), $dark_sidebar_icon_bg),
-                  inset 38px 0 0 0 transparent;
+                  inset /*38px*/ 0 0 0 transparent;
     }
   }
 
@@ -332,7 +332,7 @@ $side_theme_alt_fg: rgba($dark_sidebar_icon_fg, 0.8);
           background-repeat: no-repeat;
           background-position: 42px center;
           .sidebar-label { color: $alt_dark_sidebar_fg; }
-          // .sidebar-icon { color: inherit; }
+          .sidebar-icon { color: $dark_sidebar_icon_fg; }
         }
 
         &:selected:hover, &:active:hover {
@@ -346,7 +346,7 @@ $side_theme_alt_fg: rgba($dark_sidebar_icon_fg, 0.8);
         }
 
         button.sidebar-button {
-          color: $dark_sidebar_fg;
+          color: $dark_sidebar_icon_fg;
 
           &:hover { @include button(hover); }
           &:active { @include button(active); }
