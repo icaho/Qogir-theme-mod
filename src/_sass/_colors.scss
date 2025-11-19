@@ -4,9 +4,9 @@
 @import 'tweaks-temp';
 
 $base_color: if($variant =='light', #ffffff, #1e1e2e);
-$text_color: if($variant == 'light', #4a4c59, #cdd6f4);
+$text_color: if($variant == 'light', #4a4c59, #ffffff);
 $bg_color: if($variant =='light', #fafbfc, #181825);
-$fg_color: if($variant =='light', #1D2433, #9399b2);
+$fg_color: if($variant =='light', #1D2433, #fafbfc);
 
 $alt_base_color: if($variant == 'light', darken($base_color, 5%), lighten($base_color, 5%));
 $sec_base_color: if($variant == 'light', darken($base_color, 10%), lighten($base_color, 10%));
@@ -28,12 +28,12 @@ $sec_selected_fg_color: rgba($selected_fg_color, 0.6);
 
 $selection_mode_bg: if($trans == 'true', rgba($selected_bg_color, 0.95), $selected_bg_color);
 $selection_mode_fg: $selected_fg_color;
-$warning_color: #fab387;
-$error_color: #f38ba8;
+$warning_color: #b94e0c;
+$error_color: #be375e;
 $warning_fg_color: white;
 $error_fg_color: white;
 $success_color: #a6e3a1;
-$destructive_color: #f38ba8;
+$destructive_color: #d42154;
 $suggested_color: $selected_bg_color;
 $destructive_fg_color: white;
 $suggested_fg_color: white;

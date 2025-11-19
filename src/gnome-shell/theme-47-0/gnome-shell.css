@@ -132,7 +132,7 @@ StEntry:insensitive {
 
 StEntry StIcon.capslock-warning {
   icon-size: 16px;
-  warning-color: #fab387;
+  warning-color: #b94e0c;
   padding: 0 4px;
 }
 
@@ -729,7 +729,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   -barlevel-height: 4px;
   -barlevel-background-color: rgba(24, 24, 37, 0.15);
   -barlevel-active-background-color: #89b4fa;
-  -barlevel-overdrive-color: #f38ba8;
+  -barlevel-overdrive-color: #d42154;
   -barlevel-overdrive-separator-width: 3px;
 }
 
@@ -969,38 +969,38 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   transition-duration: 150ms;
   font-weight: bold;
   color: #D3DAE3;
-  background-color: #f38ba8;
+  background-color: #be375e;
 }
 
 #panel .panel-button.screen-recording-indicator:focus, #panel .panel-button.screen-recording-indicator:hover {
-  background-color: #f17497;
+  background-color: #aa3154;
 }
 
 #panel .panel-button.screen-recording-indicator:active, #panel .panel-button.screen-recording-indicator:checked {
-  background-color: #ef6189;
+  background-color: #9a2d4c;
 }
 
 #panel .panel-button.screen-recording-indicator:active:hover, #panel .panel-button.screen-recording-indicator:checked:hover {
-  background-color: #ee5882;
+  background-color: #922a48;
 }
 
 #panel .panel-button.screen-sharing-indicator {
   transition-duration: 150ms;
   font-weight: bold;
   color: #D3DAE3;
-  background-color: #fab387;
+  background-color: #b94e0c;
 }
 
 #panel .panel-button.screen-sharing-indicator:focus, #panel .panel-button.screen-sharing-indicator:hover {
-  background-color: #f9a36f;
+  background-color: #a1440a;
 }
 
 #panel .panel-button.screen-sharing-indicator:active, #panel .panel-button.screen-sharing-indicator:checked {
-  background-color: #f8975b;
+  background-color: #8e3c09;
 }
 
 #panel .panel-button.screen-sharing-indicator:active:hover, #panel .panel-button.screen-sharing-indicator:checked:hover {
-  background-color: #f89151;
+  background-color: #843809;
 }
 
 #panel.unlock-screen, #panel.login-screen, #panel.lock-screen, #panel:overview {
@@ -1016,38 +1016,38 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   transition-duration: 150ms;
   font-weight: bold;
   color: #D3DAE3;
-  background-color: #f38ba8;
+  background-color: #be375e;
 }
 
 #panel.unlock-screen .panel-button .panel-button.screen-recording-indicator:focus, #panel.unlock-screen .panel-button .panel-button.screen-recording-indicator:hover, #panel.login-screen .panel-button .panel-button.screen-recording-indicator:focus, #panel.login-screen .panel-button .panel-button.screen-recording-indicator:hover, #panel.lock-screen .panel-button .panel-button.screen-recording-indicator:focus, #panel.lock-screen .panel-button .panel-button.screen-recording-indicator:hover, #panel:overview .panel-button .panel-button.screen-recording-indicator:focus, #panel:overview .panel-button .panel-button.screen-recording-indicator:hover {
-  background-color: #f17497;
+  background-color: #aa3154;
 }
 
 #panel.unlock-screen .panel-button .panel-button.screen-recording-indicator:active, #panel.unlock-screen .panel-button .panel-button.screen-recording-indicator:checked, #panel.login-screen .panel-button .panel-button.screen-recording-indicator:active, #panel.login-screen .panel-button .panel-button.screen-recording-indicator:checked, #panel.lock-screen .panel-button .panel-button.screen-recording-indicator:active, #panel.lock-screen .panel-button .panel-button.screen-recording-indicator:checked, #panel:overview .panel-button .panel-button.screen-recording-indicator:active, #panel:overview .panel-button .panel-button.screen-recording-indicator:checked {
-  background-color: #ef6189;
+  background-color: #9a2d4c;
 }
 
 #panel.unlock-screen .panel-button .panel-button.screen-recording-indicator:active:hover, #panel.unlock-screen .panel-button .panel-button.screen-recording-indicator:checked:hover, #panel.login-screen .panel-button .panel-button.screen-recording-indicator:active:hover, #panel.login-screen .panel-button .panel-button.screen-recording-indicator:checked:hover, #panel.lock-screen .panel-button .panel-button.screen-recording-indicator:active:hover, #panel.lock-screen .panel-button .panel-button.screen-recording-indicator:checked:hover, #panel:overview .panel-button .panel-button.screen-recording-indicator:active:hover, #panel:overview .panel-button .panel-button.screen-recording-indicator:checked:hover {
-  background-color: #ee5882;
+  background-color: #922a48;
 }
 
 #panel.unlock-screen .panel-button .panel-button.screen-sharing-indicator, #panel.login-screen .panel-button .panel-button.screen-sharing-indicator, #panel.lock-screen .panel-button .panel-button.screen-sharing-indicator, #panel:overview .panel-button .panel-button.screen-sharing-indicator {
   transition-duration: 150ms;
   font-weight: bold;
   color: #D3DAE3;
-  background-color: #fab387;
+  background-color: #b94e0c;
 }
 
 #panel.unlock-screen .panel-button .panel-button.screen-sharing-indicator:focus, #panel.unlock-screen .panel-button .panel-button.screen-sharing-indicator:hover, #panel.login-screen .panel-button .panel-button.screen-sharing-indicator:focus, #panel.login-screen .panel-button .panel-button.screen-sharing-indicator:hover, #panel.lock-screen .panel-button .panel-button.screen-sharing-indicator:focus, #panel.lock-screen .panel-button .panel-button.screen-sharing-indicator:hover, #panel:overview .panel-button .panel-button.screen-sharing-indicator:focus, #panel:overview .panel-button .panel-button.screen-sharing-indicator:hover {
-  background-color: #f9a36f;
+  background-color: #a1440a;
 }
 
 #panel.unlock-screen .panel-button .panel-button.screen-sharing-indicator:active, #panel.unlock-screen .panel-button .panel-button.screen-sharing-indicator:checked, #panel.login-screen .panel-button .panel-button.screen-sharing-indicator:active, #panel.login-screen .panel-button .panel-button.screen-sharing-indicator:checked, #panel.lock-screen .panel-button .panel-button.screen-sharing-indicator:active, #panel.lock-screen .panel-button .panel-button.screen-sharing-indicator:checked, #panel:overview .panel-button .panel-button.screen-sharing-indicator:active, #panel:overview .panel-button .panel-button.screen-sharing-indicator:checked {
-  background-color: #f8975b;
+  background-color: #8e3c09;
 }
 
 #panel.unlock-screen .panel-button .panel-button.screen-sharing-indicator:active:hover, #panel.unlock-screen .panel-button .panel-button.screen-sharing-indicator:checked:hover, #panel.login-screen .panel-button .panel-button.screen-sharing-indicator:active:hover, #panel.login-screen .panel-button .panel-button.screen-sharing-indicator:checked:hover, #panel.lock-screen .panel-button .panel-button.screen-sharing-indicator:active:hover, #panel.lock-screen .panel-button .panel-button.screen-sharing-indicator:checked:hover, #panel:overview .panel-button .panel-button.screen-sharing-indicator:active:hover, #panel:overview .panel-button .panel-button.screen-sharing-indicator:checked:hover {
-  background-color: #f89151;
+  background-color: #843809;
 }
 
 #panel .panel-status-indicators-box,
@@ -1062,7 +1062,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 #panel .privacy-indicator,
 #panel .remote-access-indicator,
 #panel .screencast-indicator {
-  color: #fab387;
+  color: #b94e0c;
 }
 
 #panel .popup-menu-arrow {
@@ -1325,7 +1325,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   text-align: center;
   padding-bottom: 8px;
   font-size: 9pt;
-  color: #fab387;
+  color: #b94e0c;
 }
 
 /* Workspace animation */
@@ -2460,7 +2460,7 @@ StWidget.focused .app-grid-running-dot {
   -barlevel-height: 2px;
   -barlevel-background-color: rgba(0, 0, 0, 0.12);
   -barlevel-active-background-color: #89b4fa;
-  -barlevel-overdrive-color: #f38ba8;
+  -barlevel-overdrive-color: #d42154;
   -barlevel-overdrive-separator-width: 2px;
 }
 
@@ -3606,23 +3606,23 @@ StWidget.focused .app-grid-running-dot {
 
 .end-session-dialog .end-session-dialog-battery-warning,
 .end-session-dialog .dialog-list-title {
-  color: #fab387;
+  color: #b94e0c;
 }
 
 .end-session-dialog .modal-dialog-button:last-child {
   color: white;
-  background-color: #f38ba8;
-  border-color: #f59cb5;
+  background-color: #d42154;
+  border-color: #da426e;
 }
 
 .end-session-dialog .modal-dialog-button:last-child:hover {
   color: white;
-  background-color: #f7b5c7;
+  background-color: #e1416f;
 }
 
 .end-session-dialog .modal-dialog-button:last-child:active {
   color: white;
-  background-color: #f17497;
+  background-color: #be1e4b;
 }
 
 /* Message Dialog */
@@ -3755,7 +3755,7 @@ StWidget.focused .app-grid-running-dot {
 }
 
 .prompt-dialog-error-label {
-  color: #fab387;
+  color: #b94e0c;
 }
 
 /* Polkit Dialog */
@@ -3766,7 +3766,7 @@ StWidget.focused .app-grid-running-dot {
 }
 
 .polkit-dialog-user-layout .polkit-dialog-user-root-label {
-  color: #fab387;
+  color: #b94e0c;
 }
 
 /* Audio selection dialog */
@@ -3905,15 +3905,15 @@ StWidget.focused .app-grid-running-dot {
 }
 
 .screenshot-ui-capture-button:cast .screenshot-ui-capture-button-circle {
-  background-color: #f38ba8;
+  background-color: #be375e;
 }
 
 .screenshot-ui-capture-button:cast:hover .screenshot-ui-capture-button-circle, .screenshot-ui-capture-button:cast:focus .screenshot-ui-capture-button-circle {
-  background-color: #f5a2b9;
+  background-color: #c9456b;
 }
 
 .screenshot-ui-capture-button:cast:active .screenshot-ui-capture-button-circle {
-  background-color: #f06b90;
+  background-color: #a22f50;
 }
 
 .screenshot-ui-shot-cast-container {

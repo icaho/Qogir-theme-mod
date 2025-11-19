@@ -10,7 +10,7 @@
 * {
   background-clip: padding-box;
   -GtkToolButton-icon-spacing: 4;
-  -GtkTextView-error-underline-color: #f38ba8;
+  -GtkTextView-error-underline-color: #be375e;
   -GtkScrolledWindow-scrollbar-spacing: 0;
   -GtkToolItemGroup-expander-size: 11;
   -GtkWidget-text-handle-width: 20;
@@ -251,8 +251,8 @@ entry:disabled {
 
 entry.warning {
   color: white;
-  border-color: #fab387;
-  background-color: #fcd1b7;
+  border-color: #b94e0c;
+  background-color: #d5956d;
 }
 
 entry.warning image {
@@ -261,19 +261,19 @@ entry.warning image {
 
 entry.warning:focus {
   color: white;
-  background-color: #fab387;
+  background-color: #b94e0c;
   box-shadow: none;
 }
 
 entry.warning selection, entry.warning selection:focus {
   background-color: white;
-  color: #fab387;
+  color: #b94e0c;
 }
 
 entry.error {
   color: white;
-  border-color: #f38ba8;
-  background-color: #f8b9cb;
+  border-color: #be375e;
+  background-color: #d8879e;
 }
 
 entry.error image {
@@ -282,19 +282,19 @@ entry.error image {
 
 entry.error:focus {
   color: white;
-  background-color: #f38ba8;
+  background-color: #be375e;
   box-shadow: none;
 }
 
 entry.error selection, entry.error selection:focus {
   background-color: white;
-  color: #f38ba8;
+  color: #be375e;
 }
 
 entry.search-missing {
   color: white;
-  border-color: #f38ba8;
-  background-color: #f8b9cb;
+  border-color: #be375e;
+  background-color: #d8879e;
 }
 
 entry.search-missing image {
@@ -303,13 +303,13 @@ entry.search-missing image {
 
 entry.search-missing:focus {
   color: white;
-  background-color: #f38ba8;
+  background-color: #be375e;
   box-shadow: none;
 }
 
 entry.search-missing selection, entry.search-missing selection:focus {
   background-color: white;
-  color: #f38ba8;
+  color: #be375e;
 }
 
 entry:drop(active):focus, entry:drop(active) {
@@ -645,29 +645,29 @@ button.suggested-action:disabled label, button.suggested-action:disabled {
 button.destructive-action {
   background-clip: border-box;
   color: white;
-  background-color: #f38ba8;
-  border-color: #f17497;
+  background-color: #d42154;
+  border-color: #be1e4b;
 }
 
 button.destructive-action.flat {
   border-color: transparent;
   background-color: transparent;
   background-image: none;
-  color: #f38ba8;
+  color: #d42154;
 }
 
 button.destructive-action:hover {
   background-clip: border-box;
   color: white;
-  background-color: #f5a2b9;
-  border-color: #f38ba8;
+  background-color: #df3062;
+  border-color: #d42154;
 }
 
 button.destructive-action:active, button.destructive-action:checked {
   background-clip: border-box;
   color: white;
-  background-color: #f8b9cb;
-  border-color: #f5a2b9;
+  background-color: #e24672;
+  border-color: #df3062;
 }
 
 button.destructive-action.flat:disabled {
@@ -835,17 +835,17 @@ toolbar.inline-toolbar toolbutton:active, .inline-toolbar toolbutton:active, too
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.error + entry,
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry + entry.error {
-  border-left-color: #f38ba8;
+  border-left-color: #be375e;
 }
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.warning + entry,
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry + entry.warning {
-  border-left-color: #fab387;
+  border-left-color: #b94e0c;
 }
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.error + entry.warning,
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.warning + entry.error {
-  border-left-color: #f79f98;
+  border-left-color: #bc4335;
 }
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry + entry:focus:not(:last-child),
@@ -872,24 +872,24 @@ toolbar.inline-toolbar toolbutton:active, .inline-toolbar toolbutton:active, too
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry + entry.warning:focus:not(:last-child),
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry + entry.warning:focus:last-child {
-  border-left-color: #fab387;
+  border-left-color: #b94e0c;
 }
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.warning:focus:not(:only-child) + entry,
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.warning:focus:not(:only-child) + button,
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.warning:focus:not(:only-child) + combobox > box > button.combo {
-  border-left-color: #fab387;
+  border-left-color: #b94e0c;
 }
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry + entry.error:focus:not(:last-child),
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry + entry.error:focus:last-child {
-  border-left-color: #f38ba8;
+  border-left-color: #be375e;
 }
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.error:focus:not(:only-child) + entry,
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.error:focus:not(:only-child) + button,
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > entry.error:focus:not(:only-child) + combobox > box > button.combo {
-  border-left-color: #f38ba8;
+  border-left-color: #be375e;
 }
 
 .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > button:active + entry,
@@ -963,17 +963,17 @@ toolbar.inline-toolbar toolbutton:active, .inline-toolbar toolbutton:active, too
 
 .osd .linked:not(.vertical) > entry.error + entry,
 .osd .linked:not(.vertical) > entry + entry.error {
-  border-left-color: #f38ba8;
+  border-left-color: #be375e;
 }
 
 .osd .linked:not(.vertical) > entry.warning + entry,
 .osd .linked:not(.vertical) > entry + entry.warning {
-  border-left-color: #fab387;
+  border-left-color: #b94e0c;
 }
 
 .osd .linked:not(.vertical) > entry.error + entry.warning,
 .osd .linked:not(.vertical) > entry.warning + entry.error {
-  border-left-color: #f79f98;
+  border-left-color: #bc4335;
 }
 
 .osd .linked:not(.vertical) > entry + entry:focus:not(:last-child),
@@ -1000,24 +1000,24 @@ toolbar.inline-toolbar toolbutton:active, .inline-toolbar toolbutton:active, too
 
 .osd .linked:not(.vertical) > entry + entry.warning:focus:not(:last-child),
 .osd .linked:not(.vertical) > entry + entry.warning:focus:last-child {
-  border-left-color: #fab387;
+  border-left-color: #b94e0c;
 }
 
 .osd .linked:not(.vertical) > entry.warning:focus:not(:only-child) + entry,
 .osd .linked:not(.vertical) > entry.warning:focus:not(:only-child) + button,
 .osd .linked:not(.vertical) > entry.warning:focus:not(:only-child) + combobox > box > button.combo {
-  border-left-color: #fab387;
+  border-left-color: #b94e0c;
 }
 
 .osd .linked:not(.vertical) > entry + entry.error:focus:not(:last-child),
 .osd .linked:not(.vertical) > entry + entry.error:focus:last-child {
-  border-left-color: #f38ba8;
+  border-left-color: #be375e;
 }
 
 .osd .linked:not(.vertical) > entry.error:focus:not(:only-child) + entry,
 .osd .linked:not(.vertical) > entry.error:focus:not(:only-child) + button,
 .osd .linked:not(.vertical) > entry.error:focus:not(:only-child) + combobox > box > button.combo {
-  border-left-color: #f38ba8;
+  border-left-color: #be375e;
 }
 
 .osd .linked:not(.vertical) > button:active + entry,
@@ -1105,7 +1105,7 @@ headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.sta
 
 headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.stack-switcher) > entry + entry.warning:focus:not(:last-child),
 headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.stack-switcher) > entry + entry.warning:focus:last-child {
-  border-left-color: #fab387;
+  border-left-color: #b94e0c;
 }
 
 headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.stack-switcher) > entry.warning:focus:not(:only-child) + entry {
@@ -1124,7 +1124,7 @@ headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.sta
 
 headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.stack-switcher) > entry + entry.error:focus:not(:last-child),
 headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.stack-switcher) > entry + entry.error:focus:last-child {
-  border-left-color: #f38ba8;
+  border-left-color: #be375e;
 }
 
 headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.stack-switcher) > entry.error:focus:not(:only-child) + entry {
@@ -1187,17 +1187,17 @@ headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.sta
 
 .linked.vertical > entry.error + entry,
 .linked.vertical > entry + entry.error {
-  border-top-color: #f38ba8;
+  border-top-color: #be375e;
 }
 
 .linked.vertical > entry.warning + entry,
 .linked.vertical > entry + entry.warning {
-  border-top-color: #fab387;
+  border-top-color: #b94e0c;
 }
 
 .linked.vertical > entry.error + entry.warning,
 .linked.vertical > entry.warning + entry.error {
-  border-top-color: #f79f98;
+  border-top-color: #bc4335;
 }
 
 .linked.vertical > entry + entry:focus:not(:last-child),
@@ -1224,24 +1224,24 @@ headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar):not(.sta
 
 .linked.vertical > entry + entry.warning:focus:not(:last-child),
 .linked.vertical > entry + entry.warning:focus:last-child {
-  border-top-color: #fab387;
+  border-top-color: #b94e0c;
 }
 
 .linked.vertical > entry.warning:focus:not(:only-child) + entry,
 .linked.vertical > entry.warning:focus:not(:only-child) + button,
 .linked.vertical > entry.warning:focus:not(:only-child) + combobox > box > button.combo {
-  border-top-color: #fab387;
+  border-top-color: #b94e0c;
 }
 
 .linked.vertical > entry + entry.error:focus:not(:last-child),
 .linked.vertical > entry + entry.error:focus:last-child {
-  border-top-color: #f38ba8;
+  border-top-color: #be375e;
 }
 
 .linked.vertical > entry.error:focus:not(:only-child) + entry,
 .linked.vertical > entry.error:focus:not(:only-child) + button,
 .linked.vertical > entry.error:focus:not(:only-child) + combobox > box > button.combo {
-  border-top-color: #f38ba8;
+  border-top-color: #be375e;
 }
 
 .linked.vertical > button:active + entry,
@@ -2015,34 +2015,34 @@ window.thunar toolbar entry progress, window.thunar .inline-toolbar entry progre
 
 window.thunar toolbar entry.warning, window.thunar .inline-toolbar entry.warning, .caja-navigation-window toolbar#Toolbar.primary-toolbar entry.warning, .caja-navigation-window #Toolbar.primary-toolbar.inline-toolbar entry.warning, .nemo-window .primary-toolbar entry.warning, headerbar entry.warning {
   color: white;
-  border-color: #fab387;
-  background-color: #fcd1b7;
+  border-color: #b94e0c;
+  background-color: #d5956d;
 }
 
 window.thunar toolbar entry.warning:focus, window.thunar .inline-toolbar entry.warning:focus, .caja-navigation-window toolbar#Toolbar.primary-toolbar entry.warning:focus, .caja-navigation-window #Toolbar.primary-toolbar.inline-toolbar entry.warning:focus, .nemo-window .primary-toolbar entry.warning:focus, headerbar entry.warning:focus {
   color: white;
-  background-color: #fab387;
+  background-color: #b94e0c;
 }
 
 window.thunar toolbar entry.warning selection, window.thunar .inline-toolbar entry.warning selection, .caja-navigation-window toolbar#Toolbar.primary-toolbar entry.warning selection, .caja-navigation-window #Toolbar.primary-toolbar.inline-toolbar entry.warning selection, .nemo-window .primary-toolbar entry.warning selection, headerbar entry.warning selection, window.thunar toolbar entry.warning selection:focus, window.thunar .inline-toolbar entry.warning selection:focus {
   background-color: white;
-  color: #fab387;
+  color: #b94e0c;
 }
 
 window.thunar toolbar entry.error, window.thunar .inline-toolbar entry.error, .caja-navigation-window toolbar#Toolbar.primary-toolbar entry.error, .caja-navigation-window #Toolbar.primary-toolbar.inline-toolbar entry.error, .nemo-window .primary-toolbar entry.error, headerbar entry.error {
   color: white;
-  border-color: #f38ba8;
-  background-color: #f8b9cb;
+  border-color: #be375e;
+  background-color: #d8879e;
 }
 
 window.thunar toolbar entry.error:focus, window.thunar .inline-toolbar entry.error:focus, .caja-navigation-window toolbar#Toolbar.primary-toolbar entry.error:focus, .caja-navigation-window #Toolbar.primary-toolbar.inline-toolbar entry.error:focus, .nemo-window .primary-toolbar entry.error:focus, headerbar entry.error:focus {
   color: white;
-  background-color: #f38ba8;
+  background-color: #be375e;
 }
 
 window.thunar toolbar entry.error selection, window.thunar .inline-toolbar entry.error selection, .caja-navigation-window toolbar#Toolbar.primary-toolbar entry.error selection, .caja-navigation-window #Toolbar.primary-toolbar.inline-toolbar entry.error selection, .nemo-window .primary-toolbar entry.error selection, headerbar entry.error selection, window.thunar toolbar entry.error selection:focus, window.thunar .inline-toolbar entry.error selection:focus {
   background-color: white;
-  color: #f38ba8;
+  color: #be375e;
 }
 
 window.thunar toolbar button, window.thunar .inline-toolbar button, .caja-navigation-window toolbar#Toolbar.primary-toolbar button, .caja-navigation-window #Toolbar.primary-toolbar.inline-toolbar button, .nemo-window .primary-toolbar button, headerbar button {
@@ -2307,29 +2307,29 @@ headerbar .linked:not(.vertical):not(.path-bar):not(.nautilus-path-bar) > button
 .caja-navigation-window toolbar#Toolbar.primary-toolbar button.destructive-action, .caja-navigation-window #Toolbar.primary-toolbar.inline-toolbar button.destructive-action, .nemo-window .primary-toolbar button.destructive-action, headerbar button.destructive-action {
   background-clip: border-box;
   color: white;
-  background-color: #f38ba8;
-  border-color: #f17497;
+  background-color: #d42154;
+  border-color: #be1e4b;
 }
 
 .caja-navigation-window toolbar#Toolbar.primary-toolbar button.destructive-action.flat, .caja-navigation-window #Toolbar.primary-toolbar.inline-toolbar button.destructive-action.flat, .nemo-window .primary-toolbar button.destructive-action.flat, headerbar button.destructive-action.flat {
   border-color: transparent;
   background-color: transparent;
   background-image: none;
-  color: #f38ba8;
+  color: #d42154;
 }
 
 .caja-navigation-window toolbar#Toolbar.primary-toolbar button.destructive-action:hover, .caja-navigation-window #Toolbar.primary-toolbar.inline-toolbar button.destructive-action:hover, .nemo-window .primary-toolbar button.destructive-action:hover, headerbar button.destructive-action:hover {
   background-clip: border-box;
   color: white;
-  background-color: #f5a2b9;
-  border-color: #f38ba8;
+  background-color: #df3062;
+  border-color: #d42154;
 }
 
 .caja-navigation-window toolbar#Toolbar.primary-toolbar button.destructive-action:active, .caja-navigation-window #Toolbar.primary-toolbar.inline-toolbar button.destructive-action:active, .nemo-window .primary-toolbar button.destructive-action:active, headerbar button.destructive-action:active, .caja-navigation-window toolbar#Toolbar.primary-toolbar button.destructive-action:checked, .caja-navigation-window #Toolbar.primary-toolbar.inline-toolbar button.destructive-action:checked, .nemo-window .primary-toolbar button.destructive-action:checked, headerbar button.destructive-action:checked {
   background-clip: border-box;
   color: white;
-  background-color: #f8b9cb;
-  border-color: #f5a2b9;
+  background-color: #e24672;
+  border-color: #df3062;
 }
 
 .caja-navigation-window toolbar#Toolbar.primary-toolbar button.destructive-action:disabled, .caja-navigation-window #Toolbar.primary-toolbar.inline-toolbar button.destructive-action:disabled, .nemo-window .primary-toolbar button.destructive-action:disabled, headerbar button.destructive-action:disabled {
@@ -3947,8 +3947,8 @@ levelbar block:not(.empty) {
 }
 
 levelbar block.low {
-  border-color: #fab387;
-  background-color: #fab387;
+  border-color: #b94e0c;
+  background-color: #b94e0c;
 }
 
 levelbar block.high {
@@ -4581,11 +4581,11 @@ infobar.question > revealer > box {
 }
 
 infobar.warning > revealer > box {
-  background-color: #fab387;
+  background-color: #b94e0c;
 }
 
 infobar.error > revealer > box {
-  background-color: #f38ba8;
+  background-color: #be375e;
 }
 
 infobar.info > revealer > box, infobar.question > revealer > box, infobar.warning > revealer > box, infobar.error > revealer > box {
@@ -5325,11 +5325,11 @@ window.thunar notebook scrolledwindow.frame.standard-view, .nemo-window .nemo-wi
 
 .conflict-row.activatable, .conflict-row.activatable:active {
   color: white;
-  background-color: #f38ba8;
+  background-color: #be375e;
 }
 
 .conflict-row.activatable:hover {
-  background-color: #f8b9cb;
+  background-color: #cf597b;
 }
 
 .conflict-row.activatable:selected {
@@ -6944,7 +6944,7 @@ list.tilix-session-sidebar button.tilix-sidebar-close-button {
   padding: 0;
   border-radius: 100px;
   -gtk-outline-radius: 100px;
-  background-color: #f38ba8;
+  background-color: #d42154;
 }
 
 list.tilix-session-sidebar button.tilix-sidebar-close-button, list.tilix-session-sidebar button.tilix-sidebar-close-button:hover, list.tilix-session-sidebar button.tilix-sidebar-close-button:active, list.tilix-session-sidebar button.tilix-sidebar-close-button:checked {
@@ -6952,11 +6952,11 @@ list.tilix-session-sidebar button.tilix-sidebar-close-button, list.tilix-session
 }
 
 list.tilix-session-sidebar button.tilix-sidebar-close-button:hover {
-  background-color: #f8b9cb;
+  background-color: #e24672;
 }
 
 list.tilix-session-sidebar button.tilix-sidebar-close-button:active, list.tilix-session-sidebar button.tilix-sidebar-close-button:checked {
-  background-image: image(#ee5d85);
+  background-image: image(#a81a43);
 }
 
 window.background.csd > box.vertical > stack > box.horizontal > list {
@@ -9087,7 +9087,7 @@ window.budgie-power-dialog decoration {
 }
 
 .budgie-polkit-dialog .failure {
-  color: #f38ba8;
+  color: #d42154;
 }
 
 .budgie-polkit-dialog > box > grid {
@@ -9153,11 +9153,11 @@ window.budgie-power-dialog decoration {
 }
 
 .budgie-panel box.titlebar > button.image-button.titlebutton.close:hover image {
-  background-image: image(#f38ba8);
+  background-image: image(#d42154);
 }
 
 .budgie-panel box.titlebar > button.image-button.titlebutton.close:active image {
-  background-image: image(#ee5d85);
+  background-image: image(#a81a43);
 }
 
 .budgie-panel box.titlebar > button.image-button.titlebutton:not(.close):hover image {
@@ -9714,7 +9714,7 @@ actionbar.inline-toolbar button:last-child {
 }
 
 scale.warmth trough {
-  background-image: linear-gradient(to right, #89b4fa, #f38ba8);
+  background-image: linear-gradient(to right, #89b4fa, #d42154);
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25);
 }
 
@@ -9866,22 +9866,22 @@ scale.warmth trough {
 #shutdown_button.button {
   background-clip: border-box;
   color: green;
-  background-color: #f38ba8;
-  border-color: #f17497;
+  background-color: #d42154;
+  border-color: #be1e4b;
 }
 
 #shutdown_button.button:hover {
   background-clip: border-box;
   color: green;
-  background-color: #f8b9cb;
-  border-color: #f5a2b9;
+  background-color: #e24672;
+  border-color: #df3062;
 }
 
 #shutdown_button.button:active, #shutdown_button.button:checked {
   background-clip: border-box;
   color: green;
-  background-color: #ee5d85;
-  border-color: #ec4674;
+  background-color: #a81a43;
+  border-color: #92173a;
 }
 
 #restart_button.button {
@@ -11146,8 +11146,8 @@ window > hdyleaflet > scrolledwindow > viewport.frame > list > row.activatable .
 @define-color unfocused_insensitive_color rgba(29, 36, 51, 0.55);
 @define-color borders rgba(0, 0, 0, 0.12);
 @define-color unfocused_borders rgba(0, 0, 0, 0.12);
-@define-color warning_color #fab387;
-@define-color error_color #f38ba8;
+@define-color warning_color #b94e0c;
+@define-color error_color #be375e;
 @define-color success_color #a6e3a1;
 @define-color placeholder_text_color #A8A8A8;
 @define-color link_color #5895f8;
@@ -11175,7 +11175,7 @@ window > hdyleaflet > scrolledwindow > viewport.frame > list > row.activatable .
 @define-color budgie_tasklist_indicator_color #89b4fa;
 @define-color budgie_tasklist_indicator_color_active #89b4fa;
 @define-color budgie_tasklist_indicator_color_active_window #526993;
-@define-color budgie_tasklist_indicator_color_attention #fab387;
+@define-color budgie_tasklist_indicator_color_attention #b94e0c;
 @define-color STRAWBERRY_100 #FF9262;
 @define-color STRAWBERRY_300 #FF793E;
 @define-color STRAWBERRY_500 #F15D22;
